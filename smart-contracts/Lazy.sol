@@ -20,8 +20,6 @@ import "@openzeppelin/contracts/utils/cryptography/draft-EIP712.sol";
 //Website link https://www.sortcoder.tech
 // Developed by SortCoder Team
 
-
-
 contract LazyNFT is ERC721URIStorage, EIP712, AccessControl {
   bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
   string private constant SIGNING_DOMAIN = "LazyNFT-Voucher";
